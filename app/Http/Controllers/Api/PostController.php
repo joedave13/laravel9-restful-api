@@ -42,4 +42,9 @@ class PostController extends Controller
 
         return new PostResource(true, 'Post created successfully.', $post);
     }
+
+    public function show(Post $post)
+    {
+        return new PostResource(true, 'Post data found.', $post);
+    }
 }
